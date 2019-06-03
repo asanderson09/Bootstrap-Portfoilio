@@ -2,51 +2,95 @@
 <html>
 
 <head lang="eng">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
+    <!-- nav bar -->
+    <nav class="navbar-expand-md navbar-fluid navbar-light border-bottom bg-light " style="height: 90px">
+        <h1 class="navbar-brand text-white" style="height: 90px;  font-size: 2.2em;  padding: 2% 5%; background: #4aaaa5"
+        id="name" href="#">Anthony</h1>
+        <button class="navbar-toggler float-right my-4 mr-2" type="button" data-toggle="collapse"
+            data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
+            style="background: #4aaaa598;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-
-    <nav class="navbar navbar-expand-lg  bg-white navbar-light" style="height: 90px">
-        <div class="container">
-            <h2 class="navbar-brand text-white" style="background: #4aaaa5; padding: 5px 15px" href="#">Anthony</h2>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class=" justify-content-end collapse navbar-collapse " id="navbarText">
-                <ul class="navbar-nav text-justify-right ">
-                    <li class="nav-item active">
-                        <a class="nav-link nav-bar-toggler" href="#">About <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Porfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+        <!-- right floating links -->
+        <div class="justify-content-end float-right collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav text-justify-right side-links">
+                <li class="nav-item">
+                    <a class="nav-link nav-bar-toggler" href="index.html">About</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="portfolio.html">Portfolio </a>
+                       
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
         </div>
     </nav>
+    <!-- end nav bar -->
+  
+  
+  
+  
+  
+  
+  <div class="container bg-light main_content border pt-1 mb-5 mt-4">
+
+        <div class="row">
+           <div class="col-md-12">
+                <h1 class="underline">Contact</h1>
+                <hr>
+            </div>
 
 
+            <div class="container-fluid">
+                <div class="row">
+
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-12">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name" class="col-sm-2 control-label">Name</label>
+                            <div class="col-sm-12">
+                                <input type="name" class="form-control" id="inputName3" placeholder="John Smith">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="col-sm-2 control-label">Message</label>
+                            <div class="col-sm-12">
+                                <textarea class="form-control" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-7 col-sm-10">
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                        </div>
+                    </form>
 
 
-    <!-- bootstrap form  -->
-    <form class="container">
-        <div class="form-group">
-            <label for="formGroupExampleInput">Name</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="John Smith">
-        </div>
-        <div class="form-group">
-            <label for="formGroupExampleInput2">Email</label>
-            <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="example@gmail.com">
-        </div>
-    </form>
+                </div>
+            </div>
+    </div>
+  </div>
+ 
+  <div class="card-footer fixed-bottom container-fluid bg-dark text-light pt-4 mt- text-center">
+        Copyright &COPY;
+    </div>   
+    
+
 </body>
 
 </html>
